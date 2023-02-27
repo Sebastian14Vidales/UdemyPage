@@ -99,7 +99,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
- h3, .h3, h1, .h1 {
+ h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Kaisei HarunoUmi", serif;
@@ -113,6 +113,15 @@ h1, .h1 {
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 3.4rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.425rem + 2.1vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 3rem;
   }
 }
 
@@ -263,6 +272,32 @@ input {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(var(--bs-rows, 1), 1fr);
+  grid-template-columns: repeat(var(--bs-columns, 12), 1fr);
+  gap: var(--bs-gap, 1.5rem);
+}
+.grid .g-col-6 {
+  grid-column: auto/span 6;
+}
+@media (min-width: 768px) {
+  .grid .g-col-md-4 {
+    grid-column: auto/span 4;
+  }
+}
+@media (min-width: 992px) {
+  .grid .g-col-lg-3 {
+    grid-column: auto/span 3;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
 }
 @media (min-width: 992px) {
   .col-lg-4 {
@@ -662,6 +697,15 @@ input {
   margin: 0 !important;
 }
 
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
 .mt-5 {
   margin-top: 3rem !important;
 }
@@ -672,6 +716,10 @@ input {
 
 .me-4 {
   margin-right: 1.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
 }
 
 .ms-3 {
@@ -691,8 +739,17 @@ input {
   padding-bottom: 0.5rem !important;
 }
 
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
 .pt-5 {
   padding-top: 3rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 3rem !important;
 }
 
 .fs-3 {
@@ -742,6 +799,11 @@ input {
 .bg-white {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+@media (min-width: 768px) {
+  .mb-md-0 {
+    margin-bottom: 0 !important;
+  }
 }
 @media (min-width: 992px) {
   .d-lg-block {
