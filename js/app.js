@@ -84,7 +84,7 @@ function insertarHTML() {
         <td> ${nombre} </td>
         <td> ${precio} </td>
         <td> ${cantidad} </td>
-        <td> <a href="#" class="btn btn-danger eliminar-curso" data-bs="${id}"> X </a> </td>
+        <td> <a href="#" class="btn btn-danger text-white eliminar-curso" data-bs="${id}"> X </a> </td>
     `;
 
     crearCursos.appendChild(tr);
