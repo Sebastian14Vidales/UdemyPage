@@ -27,13 +27,32 @@
             <nav class="nav d-flex align-items-center">
                 <a href="#" class="nav-link">Udemy Business</a>
                 <a href="#" class="nav-link">Teach on Udemy </a>
+                <ul class="m-0">
+                    <li class="list-unstyled submenu">
+                            <img src="build/img/cart.png" id="img-carrito">
+                            <span id="notificacion" class="position-absolute top-0 start-100 translate-middle "></span>
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="table u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-dark d-flex justify-content-center">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
                 <a href="#" id="enlace" class="nav-link" data-bs-toggle="popover" data-bs-trigger="hover focus"
                     title="Carrito de Compras" data-bs-content="Compra cursos en Udemy, ¡está vacio!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                        class="bi bi-cart3" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                    </svg>
+                    
                 </a>
             </nav>
             <nav>
@@ -86,7 +105,9 @@
                                 <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                             </div>
                             <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                            <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="1">Comprar Curso</a>
                         </div>
+                        
                     </div>
                 </li>
                 <li class="curso">
@@ -101,6 +122,7 @@
                                 <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                             </div>
                             <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                            <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="2">Comprar Curso</a>
                         </div>
                     </div>
                 </li>
@@ -116,6 +138,7 @@
                                 <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                             </div>
                             <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                            <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="3">Comprar Curso</a>
                         </div>
                     </div>
                 </li>
@@ -131,6 +154,7 @@
                                 <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                             </div>
                             <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                            <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="4">Comprar Curso</a>
                         </div>
                     </div>
                 </li>
@@ -146,6 +170,7 @@
                                 <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                             </div>
                             <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                            <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="5">Comprar Curso</a>
                         </div>
                     </div>
                 </li>
@@ -161,6 +186,7 @@
                                 <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                             </div>
                             <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                            <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="6">Comprar Curso</a>
                         </div>
                     </div>
                 </li>
@@ -222,6 +248,7 @@
                             <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                         </div>
                         <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                        <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="7">Comprar Curso</a>
                     </div>
                 </div>
             </li>
@@ -237,6 +264,7 @@
                             <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                         </div>
                         <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                        <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="8">Comprar Curso</a>
                     </div>
                 </div>
             </li>
@@ -252,6 +280,7 @@
                             <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                         </div>
                         <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                        <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="9">Comprar Curso</a>
                     </div>
                 </div>
             </li>
@@ -267,6 +296,7 @@
                             <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                         </div>
                         <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                        <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="10">Comprar Curso</a>
                     </div>
                 </div>
             </li>
@@ -282,6 +312,7 @@
                             <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                         </div>
                         <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                        <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="11">Comprar Curso</a>
                     </div>
                 </div>
             </li>
@@ -297,6 +328,7 @@
                             <p class="m-0 ms-3 cantidad-personas">(3121)</p>
                         </div>
                         <p class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></p>
+                        <a href="#" class="boton-curso btn btn-dark d-flex justify-content-center" data-id="12">Comprar Curso</a>
                     </div>
                 </div>
             </li>
