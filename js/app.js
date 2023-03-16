@@ -5,6 +5,7 @@ let mybutton = document.querySelector(".topscroll");
 window.onscroll = function () { scrollFunction() };
 
 const listadoCursos = document.querySelector('.listado-cursos');
+const listadoCursos2 = document.querySelector('.listado-cursos-main');
 const vaciarCarrito = document.querySelector('#vaciar-carrito');
 const crearCursos = document.querySelector('#lista-carrito tbody');
 const carrito = document.querySelector('#carrito');
@@ -16,6 +17,7 @@ const notificar = document.querySelector('#notificacion');
 ejecutarEventListener();
 function ejecutarEventListener() {
   listadoCursos.addEventListener('click', agregarCursos);
+  listadoCursos2.addEventListener('click', agregarCursos);
   carrito.addEventListener('click', eliminarCurso);
   vaciarCarrito.addEventListener('click', () => {
     llenarCarrito = [];
