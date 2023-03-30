@@ -22,9 +22,16 @@ function ejecutarEventListener() {
   vaciarCarrito.addEventListener('click', () => {
     llenarCarrito = [];
     notificaciones(llenarCarrito.length);
+    insertarHTML();
     limpiarHTML();
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    llenarCarrito = JSON.parse(localStorage.getItem('producto')) || [];
+    insertarHTML();
+  });
 }
+  
 
 function agregarCursos(e) {
   e.preventDefault();
@@ -94,6 +101,12 @@ function insertarHTML() {
   });
 
   notificaciones(llenarCarrito.length);
+  guardarLocalStorage();
+}
+
+function guardarLocalStorage() {
+  const producto = JSON.stringify(llenarCarrito);
+  localStorage.setItem('producto', producto);
 }
 
 function limpiarHTML() {
